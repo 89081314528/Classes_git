@@ -7,7 +7,7 @@ import java.util.List;
  * девочки взрослые с 15, а мальчики с 35
  * поменять возраст используя метод set
  * лист с переменными класса персон
- * 2) сделать три класса - квадрат, прямоуголтник, треуголиник и круг. у каждого из них два метода - area, perimetеr
+ * 2) сделать три класса - прямоугольник, треуголиник и круг. у каждого из них два метода - area, perimetеr
  */
 public class Main {
 
@@ -20,6 +20,10 @@ public class Main {
     ));
         for (Person currentPerson : persons) {
             System.out.println(currentPerson.isAdult(currentPerson));
+        }
+
+        for (Person currentPerson : persons) {
+            System.out.println(currentPerson.withGender("w").getGender());
         }
     }
 }

@@ -19,4 +19,7 @@ public class Person {
     public static boolean isAdult(Person person) {
         return (person.gender.equals("w") && (person.age > 15)) || (person.gender.equals("m") && (person.age > 35));
     }
+    public Person withGender(String gender) {
+        return new Person(this.getAge(), gender);
+    }
 }
