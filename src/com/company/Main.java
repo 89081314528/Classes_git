@@ -25,5 +25,16 @@ public class Main {
         for (Person currentPerson : persons) {
             System.out.println(currentPerson.withGender("w").getGender());
         }
+
+        Rectangle rectangle = new Rectangle(2, 3);
+        Triangle triangle = new Triangle(2, 3, 4);
+        Circle circle = new Circle(4);
+        System.out.println(rectangle.perimetr());
+        System.out.println(rectangle.area());
+        System.out.println(triangle.perimetr());
+        System.out.println(triangle.area());
+        System.out.println(circle.perimetr());
+        System.out.println(circle.area());
+
     }
 }
