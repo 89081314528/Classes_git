@@ -1,6 +1,6 @@
 package com.company;
 
-public class Triangle {
+public class Triangle implements Shape {
     private final Integer sideA;
     private final Integer sideB;
     private final Integer sideC;
@@ -23,11 +23,13 @@ public class Triangle {
         return sideC;
     }
 
-    public Integer perimetr () {
-        return sideA + sideB + sideC;
+    @Override
+    public Double perimetr() {
+        return Double.valueOf(sideA + sideB + sideC);
     }
 
-    public Integer area () {
-        return (sideA * sideB) / 2;
+    @Override
+    public Double area() {
+        return Double.valueOf((sideA * sideB) / 2);
     }
 }

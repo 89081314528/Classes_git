@@ -1,6 +1,6 @@
 package com.company;
 
-public class Circle {
+public class Circle implements Shape {
     private final Integer radius;
 
     public Circle(Integer radius) {
@@ -11,11 +11,13 @@ public class Circle {
         return radius;
     }
 
-    public Double perimetr () {
+    @Override
+    public Double perimetr() {
         return Math.PI * 2 * radius;
     }
 
-    public Double area () {
+    @Override
+    public Double area() {
         return Math.PI * radius * radius;
     }
 }
